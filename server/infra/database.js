@@ -4,7 +4,7 @@ const db = pgp({
     password: 'docker',
     host: 'localhost',
     port: 5434,
-    database: 'postgres'
+    database: 'blog'
 })
 
 module.exports = db

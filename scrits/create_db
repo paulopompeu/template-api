@@ -1,3 +1,5 @@
+create schema blog;
+
 create table blog.post(
     id serial primary key,
     tittle text not null,

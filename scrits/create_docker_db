@@ -1,4 +1,4 @@
-touchtemplate api
+# template api
 verifica se a porta esta sendo utilizada por algum processo
     lsof -i :5432
 criar o container do postgres
@@ -10,3 +10,8 @@ listar todos os containers
 
 docker start nome_container
 docker stop container
+
+docker exec -it template-api-db bash
+psql -U postgres
+CREATE DATABASE blog;
+\q
