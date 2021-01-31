@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "template for api",
   "main": "./server/server.js",
+  "scripts": {
+    "test": "jest --env node"
+  },
   "repository": "https://github.com/paulopompeu/template-api",
   "author": "paulopompeu <pompeutoledo@gmail.com>",
   "license": "MIT",
