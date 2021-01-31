@@ -1,0 +1,12 @@
+template api
+verifica se a porta esta sendo utilizada por algum processo
+    lsof -i :5432
+criar o container do postgres
+     docker run --name template-api-db -e POSTGRES_PASSWORD=docker -p 5434:5432 -d postgres
+listar containers rodando
+     docker ps 
+listar todos os containers
+     docker ps -a
+
+docker start nome_container
+docker stop container

@@ -1,0 +1,9 @@
+{
+  "name": "template-api",
+  "version": "1.0.0",
+  "description": "template for api",
+  "main": "index.js",
+  "repository": "https://github.com/paulopompeu/template-api",
+  "author": "paulopompeu <pompeutoledo@gmail.com>",
+  "license": "MIT"
+}
