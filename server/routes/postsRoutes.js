@@ -1,13 +1,11 @@
 const express = require('express')
 const router = express.Router()
+const postsService = require('../services/postsService')
+
 
 router.get('/posts', async (req, res) => {
-    res.json([{
-        id: 1,
-        title: 'REST API: Methods',
-        content: '...',
-        date: new Date()
-    }])
+    const posts = await postsService.getPosts()
+    res.json(posts)
 })
 router.get('/posts/:id', async (req, res) => {
     res.end()
