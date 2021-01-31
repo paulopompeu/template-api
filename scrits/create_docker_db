@@ -1,4 +1,4 @@
-template api
+touchtemplate api
 verifica se a porta esta sendo utilizada por algum processo
     lsof -i :5432
 criar o container do postgres
