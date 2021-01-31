@@ -4,7 +4,8 @@ template api rest
 ### Roadmap
 
 - [x] ~~Docker script for Postgres~~
-- [ ] ~~Express~~
-- [ ] Router
+- [x] ~~Express~~
+- [x] ~~Router~~
 - [ ] Compress
-- [ ] 
+- [x] ~~Jest~~
+- [ ] Bottleneck
