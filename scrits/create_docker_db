@@ -8,8 +8,8 @@ listar containers rodando
 listar todos os containers
      docker ps -a
 
-docker start nome_container
-docker stop container
+docker start template-api-db
+docker stop template-api-db
 
 docker exec -it template-api-db bash
 psql -U postgres

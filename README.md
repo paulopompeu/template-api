@@ -1,11 +1,12 @@
 # template-api
 template api rest
+docker start template-api-db
 
 ### Roadmap
 
 - [x] ~~Docker script for Postgres~~
 - [x] ~~Express~~
 - [x] ~~Router~~
-- [ ] Compress
+- [x] Compress
 - [x] ~~Jest~~
 - [ ] Bottleneck
