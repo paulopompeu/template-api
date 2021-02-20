@@ -1,10 +1,14 @@
+require('dotenv').config()
+
 const express = require('express')
 const cors = require('cors')
 const compression = require('compression')
+const { bottleneckPolicy} = require('./infra/bottleneck')
 
 const app = express()
 app.use(cors())
 app.use(compression())
+app.use(bottleneckPolicy)
 
 app.use('/', require('./routes/postsRoutes'))
 
