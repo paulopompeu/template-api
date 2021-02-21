@@ -21,13 +21,11 @@ describe('Bottleneck test', () => {
       return response()
     })
 
-    let result 
-    try {
-      await Promise.all(allThePromises)
-      result = 0
-    } catch (err) {
-      result = 1
-    }
+    let result = 0
+
+    await Promise.all(allThePromises).catch(
+      (err) => (result = err.response.status)
+    )
 
     expect(result).toBe(0)
     done()
@@ -51,13 +49,11 @@ describe('Bottleneck test', () => {
       return response()
     })
 
-    let result 
-    try {
-      await Promise.all(allThePromises)
-      result = 0
-    } catch (err) {
-      result = err.response.status
-    }
+    let result = 0
+
+    await Promise.all(allThePromises).catch(
+      (err) => (result = err.response.status)
+    )
 
     expect(result).toBe(429)
 

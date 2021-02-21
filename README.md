@@ -7,6 +7,6 @@ docker start template-api-db
 - [x] ~~Docker script for Postgres~~
 - [x] ~~Express~~
 - [x] ~~Router~~
-- [x] ~Compress~
+- [x] ~~Compress~~
 - [x] ~~Jest~~
 - [x] ~~Bottleneck~~
