@@ -7,3 +7,7 @@ exports.getPosts = () => {
 exports.savePost = async (post) => {
   return await postsData.savePost(post)
 }
+
+exports.deletePost = async (id) => {
+  return await postsData.deletePost(id)
+}
