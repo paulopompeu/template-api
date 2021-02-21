@@ -5,7 +5,7 @@
   "main": "./server/server.js",
   "scripts": {
     "start": "nodemon server/server.js",
-    "test": "jest --env node"
+    "test": "jest --env node --detectOpenHandles"
   },
   "repository": "https://github.com/paulopompeu/template-api",
   "author": "paulopompeu <pompeutoledo@gmail.com>",

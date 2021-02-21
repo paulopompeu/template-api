@@ -14,6 +14,7 @@ app.get('/healthcheck', async (req, res) => {
     res.end()
 })
 
+app.use(express.json())
 app.use('/', require('./routes/postsRoutes'))
 
 const port = process.env.port || 5000
